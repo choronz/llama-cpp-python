@@ -73,8 +73,7 @@ jobs:
         with:
           name: artifact
           path: dist
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: dist/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: 0.2.57
