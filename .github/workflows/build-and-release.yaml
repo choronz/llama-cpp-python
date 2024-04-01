@@ -58,7 +58,7 @@ jobs:
           python -m pip install -e .[all]
       - name: Build source distribution
         run: |
-          python -m build --sdist
+          CMAKE_CUDA_ARCHITECTURES=89 python -m build --sdist
       - uses: actions/upload-artifact@v3
         with:
           path: ./dist/*.tar.gz
