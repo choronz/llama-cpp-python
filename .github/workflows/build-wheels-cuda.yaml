@@ -21,7 +21,7 @@ jobs:
         run: |
           $matrix = @{
               'os' = @('ubuntu-latest', 'windows-2022')
-              'pyver' = @("3.12", "3.13")
+              'pyver' = @("3.12")
               'cuda' = @("12.6.1")
               'releasetag' = @("basic")
           }
